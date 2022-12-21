@@ -1,0 +1,44 @@
+﻿@model List<TP4.Models.Student>
+
+<div class="container">
+    @foreach (Student p in Model)
+    {
+        <div class="row">
+            <div class="col">ID</div>
+            <div class="col-10">
+                @p.Id
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">First Name</div>
+            <div class="col-10">
+                @p.first_name
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">Last Name</div>
+            <div class="col-10">
+                @p.last_name
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">Phone Number</div>
+            <div class="col-10">
+                @p.phone_number
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">Course</div>
+            <div class="col-10">
+                @p.course
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">University</div>
+            <div class="col-10">
+                @p.university
+            </div>
+        </div>
+    <hr />
+    }
+</div>

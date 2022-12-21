@@ -1,0 +1,14 @@
+﻿@model List<string>
+
+<div class="container">
+    @foreach(string course in Model){
+        <div class="row">
+            <div class="col">Course</div>
+            <div class="col-10">
+                @course
+            </div>
+            <a asp-route="studentcourse" asp-route-course="@course">View Course Students</a>
+        </div>
+        <hr/>
+    }
+</div>
